@@ -42,17 +42,6 @@ button {
   cursor: pointer;
   background-color: transparent;
 }
-button:hover {
-  transform: skew(-10deg);
-}
-button:active {
-  transform: skew(-5deg);
-  background-color: #fff;
-  color: #000;
-}
-button:focus {
-  color: red;
-}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -175,6 +164,29 @@ button:focus {
   text-transform: uppercase;
   padding: 5px 10px;
   background: #fafafa;
+}
+.main-btn:hover,
+.main-btn--alt:hover,
+.main-btn--alt1:hover,
+.main-btn--alt2:hover,
+.main-btn--alt3:hover {
+  transform: skew(-10deg);
+}
+.main-btn:active,
+.main-btn--alt:active,
+.main-btn--alt1:active,
+.main-btn--alt2:active,
+.main-btn--alt3:active  {
+  transform: skew(-5deg);
+  background-color: #fff;
+  color: #000;
+}
+.main-btn:focus,
+.main-btn--alt:focus,
+.main-btn--alt1:focus,
+.main-btn--alt2:focus,
+.main-btn--alt3:focus {
+  color: red;
 }
 @media (min-width: 576px) {
   .main-btn {
@@ -826,6 +838,9 @@ button:focus {
   }
 }
 .blog-section__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
 }
 @media (min-width: 576px) {
@@ -1083,7 +1098,7 @@ button:focus {
   text-align: center;
 }
 .logo-link {
-  font-size: 18px;
+  font-size: 30px;
   line-height: 39px;
   color: #f7941e;
 }
